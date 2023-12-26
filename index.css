@@ -45,6 +45,99 @@
 .img-4,
 .img-5,
 .img-6 {
-    width: 320px;
-    height: 290px;
+    width: 250px;
+    height: 350px;
 }
+
+.name {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.rank {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.profiles-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 70px;
+    padding: 40px 200px;
+    margin: 0 auto;
+}
+
+.profile2,
+.profile5 {
+    margin-top: 90px ;
+}
+
+.nameplate{
+    color: #A9A9A9;
+text-align: center;
+font-family:  'Montserrat';
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.username {
+    color: #A9A9A9;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width:567px) {
+    .profiles-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .banner-header{
+        flex-direction: column;
+        padding: 20px 10px;
+        align-items: normal;
+        display: block;
+        text-align: center;
+    }
+    .header-title{
+        margin-bottom: 36px;
+    }
+    .description{
+        letter-spacing: -0.32px;
+        font-size: 18px;
+    }
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4,
+    .img-5,
+    .img-6 {
+        width: 150px;
+        height: 250px;
+    }
+    .profiles-container {
+        padding: 60px 10px;
+        grid-gap: 40px;
+    }
+    .profile1,
+    .profile2,
+    .profile5{
+        margin-top: 0;
+    }
+}
+
